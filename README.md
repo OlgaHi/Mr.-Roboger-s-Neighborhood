@@ -1,4 +1,4 @@
-# **   **
+# ** Mr. Roboger's Neighborhood **
 By Olha Hizhytska
 
 
@@ -27,6 +27,14 @@ By Olha Hizhytska
 
 - Open index.html in your browser.
 
+## Specifications
+
+Describe: beepBoop()
+
+Test: "It should return false if NaN is inputted"
+Expect(beepBoop("a").toEqual(false);
+
+
 ## Known Bugs
 
 - No known issues
@@ -40,4 +48,4 @@ Copyright (c) 2021 Olha Hizhytska
 
 - Olha Hizhytska olgainfotech@gmail.com
 
-## Please check my Portfolio [here]()
+## Please check this application [here]()
