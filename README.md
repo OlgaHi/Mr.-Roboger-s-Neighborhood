@@ -40,6 +40,9 @@ Expect: (beepBoop(5).toEqual("0,1,2,3,4,5");
 Test: "It should return a string with a range of numbers from 0 to inputted number (including this number), with modified digits of 1,2 and 3".
 Expect: (beepBoop(5).toEqual("0,Beep,Boop,Won't you be my neighbor?,4,5");
 
+Test: "It should convert an array elements into individual strings".
+Expect: (beepBoop(6).toEqual(["0", "1", "2", "3", "4", "5", "6"]);
+
 
 
 
