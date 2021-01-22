@@ -32,10 +32,15 @@ By Olha Hizhytska
 Describe: beepBoop()
 
 Test: "It should return false if NaN is inputted"
-Expect(beepBoop("a").toEqual(false);
+Expect: (beepBoop("a").toEqual(false);
 
 Test: "It should return a string with all the digits from 0 till inputted number, including the number"
-Expect(beepBoop(5).toEqual("0,1,2,3,4,5");
+Expect: (beepBoop(5).toEqual("0,1,2,3,4,5");
+
+Test: "It should return a string with a range of numbers from 0 to inputted number (including this number), with modified digits of 1,2 and 3".
+Expect: (beepBoop(5).toEqual("0,Beep,Boop,Won't you be my neighbor?,4,5");
+
+
 
 
 ## Known Bugs
