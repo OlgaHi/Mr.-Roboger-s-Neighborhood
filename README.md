@@ -43,7 +43,8 @@ Expect: (beepBoop(5).toEqual("0,Beep,Boop,Won't you be my neighbor?,4,5");
 Test: "It should convert an array elements into individual strings".
 Expect: (beepBoop(6).toEqual(["0", "1", "2", "3", "4", "5", "6"]);
 
-
+Test: "It should return an array, modifiying value 1"
+Expect: (beepBoop(1).toEqual(["0", "Beep"]);
 
 
 ## Known Bugs
