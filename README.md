@@ -46,6 +46,12 @@ Expect: (beepBoop(6).toEqual(["0", "1", "2", "3", "4", "5", "6"]);
 Test: "It should return an array, modifiying value 1"
 Expect: (beepBoop(1).toEqual(["0", "Beep"]);
 
+Test: "It should return an array, modifiying value 1,2 and 3, taking an account prioritizing of excemptions".
+Expect: (beepBoop(12).toEqual["0", "Beep", "Boop", "Won't you be my neighbor?", "4", "5", "6", "7", "8", "9", "Beep", "Beep", "Boop"].
+
+
+
+
 
 ## Known Bugs
 
