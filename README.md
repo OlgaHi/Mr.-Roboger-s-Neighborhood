@@ -1,4 +1,4 @@
-# ** Mr. Roboger's Neighborhood **
+# **Mr. Roboger's Neighborhood**
 By Olha Hizhytska
 
 

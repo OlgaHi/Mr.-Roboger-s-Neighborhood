@@ -1,3 +1,17 @@
 #result, #alert, #reversedArray{
   display: none;
 }
+
+#alert {
+  background-image: url('../images/alert_image.png');
+}
+
+body {
+  padding: 5%;
+  background-color: gray;
+  background-clip: content-box; 
+ }
+
+ .container {
+  background-color: lightgrey;
+ }

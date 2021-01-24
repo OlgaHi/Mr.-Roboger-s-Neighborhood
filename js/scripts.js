@@ -34,26 +34,26 @@ $(document).ready(function() {
     event.preventDefault();
     const number = $("#number").val();
      
-    if (isNaN(number) || number < 0) {
+    if (!number || number < 0) {
       $("#alert").show()
     } else {
       const displayResult = beepBoop(number)
       $("#displayResult").text(displayResult);
+      $(this)[0].reset();
     };
   })
 
-  $("#reverseButton").click(function() {
-    if (number && number > 0) {
-    const reversedArray = reverse(beepBoop(number));
-    $("#reversedArray").text(reversedArray).slideDown();
-    } else {
+  $("#reverseButton").one('click',function() {
+    if (!number || number < 0) {
       $("#alert").show()
+    } else {
+      const reversedArray = reverse(beepBoop(number));
+      $("#reversedArray").text(reversedArray).slideDown()
+      $(this)[0].reset();
     }
-  }
+    }
   )
-
-
-}
+} 
 )
  
 
