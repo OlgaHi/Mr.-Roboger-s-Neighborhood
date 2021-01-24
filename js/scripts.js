@@ -4,15 +4,20 @@ function beepBoop(number) {
   for (let i=0; i <= number; i++) {
     result.push(i.toString());
 
-    if (result[i].includes("3")){
-    result[i] = "Won't you be my neighbor?";
-    } else if (result[i].includes("2")) {
-    result[i] = "Boop";
-    } else if (result[i].includes("1")){
-      result[i] = "Beep";
-    }
-   }
-  return result.toString();
+    const modifiedResult = result.map(function(element) {
+      if (element.includes("3")) {
+       return "Won't you be my neighbor?";
+      } else if (element.includes("2")) {
+       return "Boop";
+      } else if (element.includes("1")) {
+       return "Beep";
+      } else {
+       return element;
+      }
+      });
+
+    return modifiedResult.toString();
+  }
 }
 
 
