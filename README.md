@@ -54,6 +54,9 @@ Describe: reverse()
 1.Test: "It should return reversed array, starting from the last element and finishing with a first element of the original array".
 Expect: reverse(["0", "Beep", "Boop"]).toEqual(["Boop", "Beep", "0"]).
 
+2.Test: "It should return alert, when a user click Reverse button, without providing the input number".
+Expect: click(reverse()).toEqual("Please provide any number greater than 0!")
+
 
 
 

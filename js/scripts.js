@@ -19,13 +19,13 @@ function beepBoop(number) {
   return modifiedResult;
 }
 
+const reversedArray = [];
 function reverse(modifiedResult) {
-  const reversedArray = []
-    for (i = modifiedResult.length-1; i>=0; i--) {
+  for (i = modifiedResult.length-1; i>=0; i--) {
       reversedArray.push(modifiedResult[i])
-      } 
-      return reversedArray
-   }
+    };
+  return reversedArray;
+}
 
 
 
@@ -38,16 +38,20 @@ $(document).ready(function() {
       $("#alert").show()
     } else {
       const displayResult = beepBoop(number)
-      $("#displayResult").text(displayResult)
+      $("#displayResult").text(displayResult);
     };
   })
 
   $("#reverseButton").click(function() {
+    if (number && number > 0) {
     const reversedArray = reverse(beepBoop(number));
-    $("#reversedArray").text(reversedArray).show()
-
+    $("#reversedArray").text(reversedArray).slideDown();
+    } else {
+      $("#alert").show()
+    }
   }
   )
+
 
 }
 )
