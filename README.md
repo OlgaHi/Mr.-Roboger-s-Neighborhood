@@ -31,23 +31,28 @@ By Olha Hizhytska
 
 Describe: beepBoop()
 
-Test: "It should return false if NaN is inputted"
+1.Test: "It should return false if NaN is inputted"
 Expect: (beepBoop("a").toEqual(false);
 
-Test: "It should return a string with all the digits from 0 till inputted number, including the number"
+2.Test: "It should return a string with all the digits from 0 till inputted number, including the number"
 Expect: (beepBoop(5).toEqual("0,1,2,3,4,5");
 
-Test: "It should return a string with a range of numbers from 0 to inputted number (including this number), with modified digits of 1,2 and 3".
+3.Test: "It should return a string with a range of numbers from 0 to inputted number (including this number), with modified digits of 1,2 and 3".
 Expect: (beepBoop(5).toEqual("0,Beep,Boop,Won't you be my neighbor?,4,5");
 
-Test: "It should convert an array elements into individual strings".
+4.Test: "It should convert an array elements into individual strings".
 Expect: (beepBoop(6).toEqual(["0", "1", "2", "3", "4", "5", "6"]);
 
-Test: "It should return an array, modifiying value 1"
+5.Test: "It should return an array, modifiying value 1"
 Expect: (beepBoop(1).toEqual(["0", "Beep"]);
 
-Test: "It should return an array, modifiying value 1,2 and 3, taking an account prioritizing of excemptions".
-Expect: (beepBoop(12).toEqual["0", "Beep", "Boop", "Won't you be my neighbor?", "4", "5", "6", "7", "8", "9", "Beep", "Beep", "Boop"].
+6.Test: "It should return an array, modifiying value 1,2 and 3, taking an account prioritizing of excemptions".
+Expect: (beepBoop(12).toEqual(["0", "Beep", "Boop", "Won't you be my neighbor?", "4", "5", "6", "7", "8", "9", "Beep", "Beep", "Boop"]).
+
+Describe: reverse()
+
+1.Test: "It should return reversed array, starting from the last element and finishing with a first element of the original array".
+Expect: reverse(["0", "Beep", "Boop"]).toEqual(["Boop", "Beep", "0"]).
 
 
 
