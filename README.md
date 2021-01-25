@@ -32,10 +32,12 @@ This application takes a number from a user and returns a range of numbers from 
 ## Setup
 
 - Clone this repository to your desktop, using next command:
-git clone https://github.com/OlgaHi/Mr.-Roboger-s-Neighborhood.git
+
+  git clone https://github.com/OlgaHi/Mr.-Roboger-s-Neighborhood.git
 
 - Navigate to the top level of the directory.
-cd Mr.-Roboger-s-Neighborhood
+
+  cd Mr.-Roboger-s-Neighborhood
 
 - Open index.html in your browser.
 

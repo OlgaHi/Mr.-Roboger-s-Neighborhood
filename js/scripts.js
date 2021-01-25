@@ -51,9 +51,7 @@ $(document).ready(function() {
       $("#reversedArray").text(reversedArray).slideDown()
       $(this)[0].reset();
     }
-    }
-  )
-} 
-)
+  })
+})
  
 
