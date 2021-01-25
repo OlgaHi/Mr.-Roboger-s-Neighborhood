@@ -7,11 +7,15 @@
 }
 
 body {
-  padding: 5%;
+  padding: 10%;
   background-color: gray;
   background-clip: content-box; 
  }
 
  .container {
   background-color: lightgrey;
+ }
+
+ h1 {
+   text-align: center;
  }

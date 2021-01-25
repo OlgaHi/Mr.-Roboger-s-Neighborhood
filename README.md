@@ -3,7 +3,7 @@ By Olha Hizhytska
 
 
 
-![Homepage](images/)
+![Homepage](images/screenshot.png)
 
 ## Technologies Used:
 
@@ -16,14 +16,26 @@ By Olha Hizhytska
 
 ## Description
 
+This application takes a number from a user and returns a range of numbers from 0 to the user inputted number (including this number) with the next exceptions:
+
+ - Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
+ - Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
+ - Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
+
+ These exceptions are written from least to most important.
+ A user can enter a new number and see new results over and over again.
+ Button "Reverse Result" shows the output in reversed order.
+
 
  
 
 ## Setup
 
 - Clone this repository to your desktop, using next command:
+git clone https://github.com/OlgaHi/Mr.-Roboger-s-Neighborhood.git
 
 - Navigate to the top level of the directory.
+cd Mr.-Roboger-s-Neighborhood
 
 - Open index.html in your browser.
 
@@ -56,9 +68,6 @@ Expect: reverse(["0", "Beep", "Boop"]).toEqual(["Boop", "Beep", "0"]).
 
 2.Test: "It should return alert, when a user click Reverse button, without providing the input number".
 Expect: click(reverse()).toEqual("Please provide any number greater than 0!")
-
-
-
 
 
 ## Known Bugs
