@@ -1,5 +1,4 @@
 let result = [];
-
 function beepBoop(number) {
   for (let i=0; i <= number; i++) {
     result.push(i.toString());
@@ -19,14 +18,13 @@ function beepBoop(number) {
   return modifiedResult;
 }
 
-const reversedArray = [];
 function reverse(modifiedResult) {
+  const reversedArray = [];
   for (i = modifiedResult.length-1; i>=0; i--) {
       reversedArray.push(modifiedResult[i])
     };
   return reversedArray;
 }
-
 
 
 $(document).ready(function() {
@@ -37,19 +35,19 @@ $(document).ready(function() {
     if (!number || number < 0) {
       $("#alert").show()
     } else {
-      const displayResult = beepBoop(number)
+      const displayResult = beepBoop(number);
       $("#displayResult").text(displayResult);
-      $(this)[0].reset();
+      $("#number").val("");
     };
   })
 
   $("#reverseButton").one('click',function() {
     if (!number || number < 0) {
-      $("#alert").show()
+      $("#alert").show();
     } else {
       const reversedArray = reverse(beepBoop(number));
-      $("#reversedArray").text(reversedArray).slideDown()
-      $(this)[0].reset();
+      $("#reversedArray").text(reversedArray).slideDown();
+      
     }
   })
 })
