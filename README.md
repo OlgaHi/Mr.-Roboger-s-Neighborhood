@@ -3,7 +3,7 @@ By Olha Hizhytska
 
 
 
-![Homepage](images/screenshot.png)
+![Homepage](images/screenshot1.png)
 
 ## Technologies Used:
 
@@ -24,10 +24,8 @@ This application takes a number from a user and returns a range of numbers from 
 
  These exceptions are written from least to most important.
  A user can enter a new number and see new results over and over again.
- Button "Reverse Result" shows the output in reversed order.
-
-
  
+
 
 ## Setup
 

@@ -1,32 +1,21 @@
-let result = [];
 function beepBoop(number) {
-  for (let i=0; i <= number; i++) {
+  
+  let result = [];
+  for (let i = 0; i <= number; i++) {
     result.push(i.toString());
-  }
-  const modifiedResult = result.map(function(element) {
-    if (element.includes("3")) {
-      return "Won't you be my neighbor?";
-    } else if (element.includes("2")) {
-      return "Boop";
-    } else if (element.includes("1")) {
-      return "Beep";
-    } else {
-      return element;
+  
+    if (result[i].includes("3")) {
+      result[i] = "Won't you be my neighbor?";
+    } else if (result[i].includes("2")) {
+      result[i] = "Boop!";
+    } else if (result[i].includes("1")) {
+      result[i] = "Beep!";
     }
-    });
-
-  return modifiedResult;
+  }
+  return result;
 }
-
-function reverse(modifiedResult) {
-  const reversedArray = [];
-  for (i = modifiedResult.length-1; i>=0; i--) {
-      reversedArray.push(modifiedResult[i])
-    };
-  return reversedArray;
-}
-
-
+    
+  
 $(document).ready(function() {
   $("form#transform_number").submit(function(event) {
     event.preventDefault();
@@ -35,20 +24,10 @@ $(document).ready(function() {
     if (!number || number < 0) {
       $("#alert").show()
     } else {
-      const displayResult = beepBoop(number);
-      $("#displayResult").text(displayResult);
+      const display = beepBoop(number);
+      $("#displayResult").text(display);
       $("#number").val("");
     };
-  })
-
-  $("#reverseButton").one('click',function() {
-    if (!number || number < 0) {
-      $("#alert").show();
-    } else {
-      const reversedArray = reverse(beepBoop(number));
-      $("#reversedArray").text(reversedArray).slideDown();
-      
-    }
   })
 })
  
